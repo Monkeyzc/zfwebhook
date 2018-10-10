@@ -5,6 +5,8 @@ var request = require('request')
 
 var app = express()
 
+const port = process.env.PORT || 8080
+
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
@@ -25,6 +27,6 @@ app.get('/test', function (req, res) {
   res.send({mes: 'hello world'})
 })
 
-app.listen('8080', function (req, res) {
+app.listen(port, function (req, res) {
   console.log('server is listening on 8080')
 })

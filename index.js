@@ -6,7 +6,7 @@ var request = require('request')
 var app = express()
 
 const port = process.env.PORT || 8080
-const DingTalkWebhook = 'https://oapi.dingtalk.com/robot/send?access_token=f8d55d2ea46ff45a96db7da30ff73a8976734b8fe43f117bac0d302c9f4eccdd'
+const DingTalkWebhook = 'https://oapi.dingtalk.com/robot/send?access_token=1507a41bc7f239d1ed537b07b7dbe1a7f7337ff4cd01ef46651fab93dfffb872'
 const atMobiles = ['13051149394']
 
 app.use(bodyParser.urlencoded({extended: true}))
